@@ -10,21 +10,6 @@
 using namespace std;
 class Solution {
 public:
-    // int longestConsecutive(vector<int>& nums) {
-    //     if(nums.size() == 0u)
-    //         return 0;
-    //     set<int> ump(nums.begin(),nums.end());
-    //     int max = 1,cur = max;
-    //     for(const auto& it : ump){
-    //         if(ump.find(it + 1) != ump.end()){
-    //             cur++;
-    //         }else{
-    //             max = cur > max ? cur : max;
-    //             cur = 1;
-    //         }
-    //     }
-    //     return max;
-    // }
         int longestConsecutive(vector<int>& nums) {
         unordered_set<int> ump(nums.begin(),nums.end());
         int res = 0;
